@@ -1,4 +1,14 @@
 package com.elifcan.librarymanagingsystem.exception;
 
-public class LibraryManagingException {
+import lombok.Getter;
+
+@Getter
+public class LibraryManagingException extends RuntimeException { // because error only occurs when the application run
+
+    private ErrorType errorType;
+    public LibraryManagingException(ErrorType errorType){
+        super(errorType.getMessage());
+        this.errorType = errorType;
+    }
+
 }
