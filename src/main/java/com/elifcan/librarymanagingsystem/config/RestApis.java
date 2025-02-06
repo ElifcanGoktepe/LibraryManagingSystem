@@ -10,6 +10,7 @@ public class RestApis {
     private static final String BASE_URL = DEV + VERSION;
 
     public static final String BOOK = BASE_URL + "/book";
+    public static final String USER = BASE_URL + "/user";
 
     public static final String DO_REGISTER = BASE_URL + "/do-register";
     public static final String LIST_BOOKS = BASE_URL + "/list_books";
